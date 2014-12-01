@@ -54,5 +54,8 @@ def max_product_in(series, num_of_digits)
   max_product
 end
 
+# max number in serious
+# digits.split('').each_cons(5).max.join.to_i
+
 p max_product_in series, 13
 

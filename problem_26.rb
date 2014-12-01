@@ -15,7 +15,7 @@
 # Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
 
 def recurring_cycle(n)
-  quotient = (1.0/n).to_s
+  quotient = "%0.1000f" % (1.0/n)
   return nil if quotient.size < 18
   dec = quotient.split('.')[1]
   size = dec.size
